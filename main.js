@@ -28,13 +28,13 @@ const httpServer = http.createServer((req, res) => {
         return;
     }
 
-        res.writeHead(200, {
-            'Content-Type': 'text/html',
-        });
-
-        const readStream = fs.createReadStream(FilePath);
-        readStream.pipe(res);
-        return;    
+    res.writeHead(200, {
+        'Content-Type': 'text/html',
+    });
+    
+    // const readStream = fs.createReadStream(FilePath);
+    // readStream.pipe(res);
+    // return;    
     
 });
 
